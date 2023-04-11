@@ -1,5 +1,5 @@
 # SoC
-Creation of a ASIC that performs computations with vectors. 
+Creation of an ASIC that performs computations with vectors. 
 
 Team members: Dimkou Eleni, 
 		   Karagiannis Marios,
