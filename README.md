@@ -3,16 +3,17 @@ Creation of an ASIC that performs computations with vectors.
 
 Team members: Dimkou Eleni, 
 		   Karagiannis Marios,
-		   Lianidis Theodoris
+		   Lianidis Theodorοs
        
        
 # Topic of Work: 
 ## Implementation of a digital integrated system with a specific application (ASIC), specifically the construction of a calculator for vectors. 
   ![image](https://user-images.githubusercontent.com/77272704/231000038-a07edc4a-c66e-4a45-aae5-6f568058bba9.png)
-  /*For this project, we will be using the Design Compiler tool and Prime Time tool from Synopsys and INNOVUS from Cadence.
+  
+  *For this project, we will be using the Design Compiler tool and Prime Time tool from Synopsys and INNOVUS from Cadence.
 
 
-The process we followed to create our ASIC is shown in the 1rst Figure.
+The process we followed to create our ASIC is shown in the Figure bellow.
 ![image](https://user-images.githubusercontent.com/77272704/231000261-748189ee-5de7-46e5-bbb3-a55e0c69ca0e.png)
 
   Specifically, we have created a unit that performs two operations with vectors of 2, 3, or 4 dimensions: 
@@ -22,13 +23,14 @@ The process we followed to create our ASIC is shown in the 1rst Figure.
 ➢ **Length of a vector**
 
   To execute the inner product function, we used 2 pre-made modules (add, mult) and for the length function, we used 3 pre-made modules (add, mult, root). Additionally, we have created a finite state machine (FSM) that, based on our 4-bit func signal, performs the appropriate operation assigned to it through the test bench. Finally, we have created a top-level module that calls the aforementioned modules.
+
 Some of the conventions we have implemented for creating our unit are:
     1. All inputs and outputs are 32 bits long, of which:
           16 bits are for decimal digits
           15 bits are for integer digits
           1 bit (the most significant) is for sign indication (1 for <0, 0 for >0)
-    1. For each of the operations, we will take the 4 dimensions as inputs. However, if we want to calculate in the 2nd/3rd dimension, the inputs of the odd dimensions will be zeroed out through the fsm so as not to affect the result.
-    2. In any case, all operations of each function will be performed regardless of the dimension of the vector.
+    2. For each of the operations, we will take the 4 dimensions as inputs. However, if we want to calculate in the 2nd/3rd dimension, the inputs of the odd dimensions will be zeroed out through the fsm so as not to affect the result.
+    3. In any case, all operations of each function will be performed regardless of the dimension of the vector.
 
 
 ## MODULES:
