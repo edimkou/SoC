@@ -10,10 +10,10 @@ Team members: Dimkou Eleni, Karagiannis Marios, Lianidis Theodorοs
 ## Implementation of a digital integrated system with a specific application (ASIC), specifically the construction of a calculator for vectors. 
 
 ![image](https://user-images.githubusercontent.com/77272704/231000038-a07edc4a-c66e-4a45-aae5-6f568058bba9.png)
-  
 *For this project, we will be using the Design Compiler tool and Prime Time tool from Synopsys and INNOVUS from Cadence.
 <br>
 The process we followed to create our ASIC is shown in the Figure bellow.
+
 ![image](https://user-images.githubusercontent.com/77272704/231000261-748189ee-5de7-46e5-bbb3-a55e0c69ca0e.png)
 
 Specifically, we have created a unit that performs two operations with vectors of 2, 3, or 4 dimensions: 
